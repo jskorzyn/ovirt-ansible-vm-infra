@@ -1,5 +1,5 @@
 ---
-- name: oVirt infra
+- name: RHV infra
   hosts: localhost
   connection: local
   gather_facts: false
@@ -32,7 +32,7 @@
 
     vms:
       - name: postgresql-vm-2
-        memory: 2GiB
+        memory: 1GiB
         profile: "{{ db_vm }}"
         tag:
           - pgsql
