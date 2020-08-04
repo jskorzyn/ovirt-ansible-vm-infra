@@ -32,7 +32,7 @@
         - db
         - dbvm
       disks:
-        - size: 2GiB
+        - size: "{{ ex_disk_size }}"
           name: data
           storage_domain: data-nfs01
           interface: virtio
@@ -42,7 +42,6 @@
         memory: "{{ ex_memory }}"
         profile: "{{ db_vm }}"
         tag: "{{ ex_tag }}"
-        db_vm.disks.size: "{{ ex_disk_size }}"
 
 
   roles:
