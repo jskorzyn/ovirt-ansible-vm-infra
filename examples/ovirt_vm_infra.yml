@@ -19,7 +19,7 @@
       cluster: DemoLab
       template: rhel7vm-template
       memory: 1GiB
-      memory_max: 2GiB
+      memory_max: 3GiB
       cores: 1
       tag:
         - db
@@ -32,7 +32,7 @@
 
     vms:
       - name: postgresql-vm-2
-        memory: 1GiB
+        memory: 3GiB
         profile: "{{ db_vm }}"
         tag:
           - pgsql
