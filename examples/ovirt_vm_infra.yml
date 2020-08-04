@@ -42,7 +42,7 @@
         memory: "{{ ex_memory }}"
         profile: "{{ db_vm }}"
         tag: "{{ ex_tag }}"
-        disks.size: "{{ ex_disk_size }}"
+        db_vm.disks.size: "{{ ex_disk_size }}"
 
 
   roles:
