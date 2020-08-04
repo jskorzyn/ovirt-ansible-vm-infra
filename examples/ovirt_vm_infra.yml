@@ -6,12 +6,12 @@
 
   vars_files:
     # Contains encrypted `engine_password` varibale using ansible-vault
-    - passwords.yml
+    #- passwords.yml
 
   vars:
-    engine_fqdn: ovirt-engine.example.com
-    engine_user: admin@internal
-    engine_cafile: /etc/pki/ovirt-engine/ca.pem
+    #engine_fqdn: ovirt-engine.example.com
+    #engine_user: admin@internal
+    #engine_cafile: /etc/pki/ovirt-engine/ca.pem
 
     debug_vm_create: yes
     db_vm:
