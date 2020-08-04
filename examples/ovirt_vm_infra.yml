@@ -25,7 +25,7 @@
         - db
         - dbvm
       disks:
-        - size: 2GiB
+        - size: 1GiB
           name: data
           storage_domain: data-nfs01
           interface: virtio
