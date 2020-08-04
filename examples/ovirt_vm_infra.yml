@@ -25,14 +25,14 @@
         - db
         - dbvm
       disks:
-        - size: 1GiB
+        - size: 2GiB
           name: data
           storage_domain: data-nfs01
           interface: virtio
 
     vms:
       - name: postgresql-vm-0
-        memory: 2GiB
+        memory: 3GiB
         profile: "{{ db_vm }}"
         tag:
           - pgsql
