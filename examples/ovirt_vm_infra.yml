@@ -14,6 +14,12 @@
     #engine_cafile: /etc/pki/ovirt-engine/ca.pem
 
     debug_vm_create: yes
+    
+    ex_memory: 1GiB
+    ex_tag:
+      - pgsql
+      - httpd
+    
     db_vm:
       state: running
       cluster: DemoLab
@@ -32,11 +38,10 @@
 
     vms:
       - name: postgresql-vm-2
-        memory: 1GiB
+        memory: "{{ ex_memory }}"
         profile: "{{ db_vm }}"
-        tag:
-          - pgsql
-          - httpd
+        tag: "{{ ex_tag }}"
+
 
   roles:
     - ovirt.vm-infra
