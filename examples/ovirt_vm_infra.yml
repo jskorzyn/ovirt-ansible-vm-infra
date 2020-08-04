@@ -20,6 +20,7 @@
       - pgsql
       - httpd
     ex_disk_size: 3GiB
+    ex_name: dbvm01
     
     db_vm:
       state: running
@@ -38,7 +39,7 @@
           interface: virtio
 
     vms:
-      - name: postgresql-vm-2
+      - name: "{{ ex_name }}"
         memory: "{{ ex_memory }}"
         profile: "{{ db_vm }}"
         tag: "{{ ex_tag }}"
