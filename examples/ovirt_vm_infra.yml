@@ -32,7 +32,7 @@
 
     vms:
       - name: postgresql-vm-2
-        memory: 1GiB
+        memory: 2GiB
         profile: "{{ db_vm }}"
         tag:
           - pgsql
