@@ -19,6 +19,7 @@
     ex_tag:
       - pgsql
       - httpd
+    ex_disk_size: 3GiB
     
     db_vm:
       state: running
@@ -41,6 +42,7 @@
         memory: "{{ ex_memory }}"
         profile: "{{ db_vm }}"
         tag: "{{ ex_tag }}"
+        disks.size: "{{ ex_disk_size }}"
 
 
   roles:
